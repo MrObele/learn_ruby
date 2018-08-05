@@ -5,6 +5,6 @@ def ftoc(number_in_fahrenheit)
 end
 
 def ctof(number_in_celsius)
-	number_in_fahrenheit = ((9/5.to_f * number_in_celsius) + 32).to_i
+	number_in_fahrenheit = (((9/5.to_f) * number_in_celsius) + 32)
 	number_in_fahrenheit
 end
