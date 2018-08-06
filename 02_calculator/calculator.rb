@@ -8,19 +8,13 @@ def subtract(first_number,second_number)
 end
 
 def sum(numbers_to_sum)
-	sum = 0
-		numbers_to_sum.each do |i|
-			sum += i.to_i;
-		end
-	sum
+
+	numbers_to_sum.reduce(0,:+);
+	
 end
 
 def multiply(numbers_to_multiply)
-	number_multiplied = 1
-	numbers_to_multiply.each do |number_to_multiply_with|
-		number_multiplied *= number_to_multiply_with 
-	end
-	number_multiplied
+	numbers_to_multiply.reduce(1, :*);
 end
 
 def power(first_number,second_number)
